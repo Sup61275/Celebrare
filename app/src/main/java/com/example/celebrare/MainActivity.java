@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.widget.Button;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -33,9 +34,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //
 
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
         Button galleryButton = findViewById(R.id.galleryButton);
         galleryButton.setOnClickListener(v -> checkGalleryPermissionAndOpen());
     }
+
+
 
 
     private void checkGalleryPermissionAndOpen() {

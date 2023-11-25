@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- App theme -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here -->
-        <!-- ... -->
-    </style>
 
-    <!-- ActionBar style -->
-    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.Toolbar">
-        <item name="android:background">@color/dark_green</item>
-    </style>
+        <!-- Other styles -->
+
+        <!-- App theme -->
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Your custom color definitions -->
+            <item name="colorPrimary">@color/white</item> <!-- Background color of the ActionBar -->
+            <item name="colorPrimaryDark">@color/dark_green</item> <!-- Upper part of the ActionBar -->
+            <!-- Other style attributes -->
+
+        </style>
+
+
 
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,21 +8,12 @@
     android:backgroundTint="@color/dark_green">
 
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/white"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:title="Add Image/Icon"
-        app:titleTextColor="#5C5757"
-        />
 
     <!-- Container for the main content -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar"
+
         android:padding="16dp"
         android:gravity="center">
 
@@ -35,7 +27,7 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp"
-           >
+            >
 
             <!-- "Upload Image" text in beautiful handwriting -->
             <TextView
@@ -55,7 +47,6 @@
                 android:background="@drawable/button"
                 android:backgroundTint="@color/dark_green"
                 android:fontFamily="sans-serif-condensed-medium"
-
                 android:paddingStart="22dp"
                 android:paddingEnd="22dp"
                 android:text="Choose from Device"
@@ -63,18 +54,18 @@
         </LinearLayout>
 
         <com.canhub.cropper.CropImageView
-                android:id="@+id/cropImageView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/white"
-                app:layout_constraintTop_toBottomOf="@+id/galleryButton"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintVertical_bias="0.5" />
-
+            android:id="@+id/cropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/galleryButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
 
     </LinearLayout>
 </RelativeLayout>
+
 
